@@ -31,5 +31,6 @@ try:
         else:
             # it's not pressed, set button off
             GPIO.output(buzzer_pin, GPIO.LOW)
+
 except KeyboardInterrupt:
     GPIO.cleanup()
